@@ -13,6 +13,14 @@ export const BoxPlayerName = styled(Box)(({ theme }) => ({
   display: 'flex',
   justifyContent: 'flex-end',
   alignItems: 'flex-end',
+  paddingLeft: theme.spacing(4),
+  paddingRight: theme.spacing(4),
+  marginBottom: theme.spacing(2),
+
+  '@media (max-width: 375px)': {
+    paddingLeft: theme.spacing(2),
+    paddingRight: theme.spacing(2),
+  }
 }));
 
 export const BoxContent = styled(Box)(({ theme }) => ({
@@ -33,6 +41,15 @@ export const BoxButtons = styled(Box)(({ theme }) => ({
   gridTemplateColumns: '1fr 1fr',
   gap: 16,
   marginBottom: theme.spacing(4),
+  
+  '@media (max-width: 900px)': {
+    marginBottom: theme.spacing(8),
+  },
+
+  '@media (max-width: 375px)': {
+    gridTemplateColumns: '1fr',
+    marginBottom: theme.spacing(14),
+  }
 }));
 
 export const BoxCards = styled(Box)(({ theme }) => ({
