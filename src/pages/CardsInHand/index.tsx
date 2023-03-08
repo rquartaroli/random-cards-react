@@ -1,4 +1,5 @@
 import Button from '@mui/material/Button';
+import { Card } from '../../components/Card';
 
 import * as S from "./styles";
 
@@ -38,7 +39,12 @@ export function CardsInHand() {
         </S.BoxButtons>
 
         <S.BoxCards>
-          <h1>Aqui serão inseridas as cartas posteriormente</h1>
+          <Card 
+            valueCard={10}
+            imageCard="https://avatars.githubusercontent.com/u/48213007?v=4"
+            titleCard="Rafael"
+            descriptionCard="Desenvolvedor topzera em busca de uma oportunidade para mostrar todo o potencial"
+          />
         </S.BoxCards>
 
       </S.BoxContent>
