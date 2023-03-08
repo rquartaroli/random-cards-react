@@ -6,6 +6,7 @@ import { styled } from '@mui/material/styles';
 
 export const CardWrapper = styled(Card)(({ theme }) => ({
   maxWidth: 345,
+  backgroundColor: theme.palette.secondary.main,
 }));
 
 export const CardActionAreaBackground = styled(CardActionArea)(({ theme }) => ({

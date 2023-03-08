@@ -21,13 +21,13 @@ export function Card({ valueCard, imageCard, titleCard, descriptionCard }: CardP
           component="img"
           height="340"
           image={imageCard}
-          alt="card"
+          alt={titleCard}
         />
         <CardContent>
-          <S.TypographyTitleCard gutterBottom variant="h5">
+          <S.TypographyTitleCard gutterBottom variant="h6">
             {titleCard}
           </S.TypographyTitleCard>
-          <S.TypographySubTitleCard variant="body2" color="text.secondary">
+          <S.TypographySubTitleCard variant="caption" color="text.secondary">
             {descriptionCard}
           </S.TypographySubTitleCard>
         </CardContent>
