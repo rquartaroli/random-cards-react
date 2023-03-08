@@ -6,11 +6,12 @@ import '@fontsource/roboto/700.css';
 
 import '../src/styles/global.css';
 import { theme } from './styles/theme';
+import { Home } from './pages/Home';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <h1>Hello World</h1>
+      <Home />
     </ThemeProvider>
   )
 }
