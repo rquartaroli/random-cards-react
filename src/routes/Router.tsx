@@ -7,7 +7,7 @@ export function Router() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/viewcards" element={<CardsInHand />} />
+      <Route path="/viewcards/:name" element={<CardsInHand />} />
     </Routes>
   )
 }
